@@ -8,11 +8,14 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({
-  origin: "http://localhost:3000",
-  methods: ["GET", "POST", "DELETE"],
-  allowedHeaders: ["Content-Type"]
-}));
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://farcloud.vercel.app"],
+    methods: ["GET", "POST", "DELETE"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+
 app.use(express.json({ limit: "10mb" }));
 
 const s3 = new AWS.S3({
