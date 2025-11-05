@@ -10,11 +10,17 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://farcloud.vercel.app"],
+    origin: [
+      "http://localhost:3000",
+      "https://farcloud.vercel.app",
+      "https://farcloud-app.vercel.app",
+      "https://farcloud-nsqisgkj0-prasads-projects-0504764a.vercel.app"
+    ],
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
 );
+
 
 app.use(express.json({ limit: "10mb" }));
 
