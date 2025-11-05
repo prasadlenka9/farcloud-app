@@ -1,0 +1,10 @@
+cd C:\dp\farview_task\picsum-s3-app\server
+npm start
+
+
+cd C:\dp\farview_task\picsum-s3-app\server
+npm start
+
+
+npx kill-port 5001
+npm run dev

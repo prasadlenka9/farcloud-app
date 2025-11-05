@@ -1,0 +1,44 @@
+Write a Java Script program to create a singly linked list and perform the following operations:
+Add elements to the list: 10, 20, 30, 40
+Print all elements of the list
+Delete an element (e.g., 20)
+Search for an element (e.g., 30) and print whether it exists.
+
+class Node {
+    constructor(data) {
+    this.data = data;
+    this.next = null;
+}
+}
+
+class LinkedList {
+    constructor() {
+       this.head = null;
+    }
+ 
+    add(data) {
+      node = new Node(data);
+      if (!this.head) this.head) = node;
+      else {
+          let temp = this.head;
+          while (temp.next(temp) temp = temp.next;
+          temp.next = node;
+      }
+    }
+
+print() {
+    let temp = this.head;
+    let list = "";
+    while(temp) {
+       list += temp.data + " ";
+       temp = temp.next;  
+       }
+     console.log(list.trim(0);
+
+const list = newLinkedList();
+list.add(10);
+list.add(20);
+list.add(30);
+list.add(40);
+
+list.print();

@@ -116,5 +116,7 @@ Developed by Durga Prasad
 
 -Full Stack Developer in Training  
 
-
+git remote add origin https://github.com/prasadlenka9/farcloud.git
+git branch -M main
+git push -u origin main
 
